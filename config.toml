@@ -1,78 +1,59 @@
-baseurl = "https://example.org/"
+baseurl = "https://visualcomputing.github.io/"
+title = "Visual computing"
+theme = "hugo-tracks-theme"
 languageCode = "en-us"
-title = "Material Docs"
-theme = "hugo-material-docs"
-metadataformat = "yaml"
-canonifyurls = true
-# Enable Google Analytics by entering your tracking id
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 
 [params]
-	# General information
-	author = "Digitalcraftsman"
-	description = "A material design theme for documentations."
-	copyright = "Released under the MIT license"
+  # Use custom.css for your custom styling
+  style = "default"
+  description = "Describe your website"
+  copyright = ""
+  sidebarAbout = [
+    "I am a creative illustrator and graphic designer with more than 10 years of experience.",
+    "Originally from Toronto, currently based in London."
+  ]
 
-	# Repository
-	provider = "GitHub"
-	repo_url = "https://github.com/digitalcraftsman/hugo-material-docs"
+  # Contact page
+  # Since this template is static, the contact form uses www.formspree.io as a
+  # proxy. The form makes a POST request to their servers to send the actual
+  # email. Visitors can send up to a 1000 emails each month for free.
+  #
+  # What you need to do for the setup?
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email yourself to confirm your account
+  # - click the confirm link in the email from www.formspree.io
+  # - you're done. Happy mailing!
+  email = "you@yoursite.com"
 
-	version = "1.0.0"
-	logo = "images/logo.png"
-	favicon = ""
+  # Nav links in the side bar
+  [[params.navlinks]]
+  name = "Home"
+  url = ""
 
-	permalink = "#"
+  [[params.navlinks]]
+  name = "Presentations"
+  url = "presentations/"
 
-	# Custom assets
-	custom_css = []
-	custom_js  = []
+  [[params.navlinks]]
+  name = "Syllabus"
+  url = "syllabus/"
 
-	# Syntax highlighting theme
-	highlight_css  = ""
+  [[params.navlinks]]
+  name = "Projects"
+  url = "projects/"
 
-	[params.palette]
-    	primary = "red"
-    	accent  = "teal"
-
-    [params.font]
-    	text = "Ubuntu"
-    	code = "Ubuntu Mono"
-
-
-[social]
-	twitter = ""
-	github  = "digitalcraftsman"
-	email   = "hello@email.com"
-
-
-[[menu.main]]
-	name   = "Material"
-	url    = "/"
-	weight = 0
-
-[[menu.main]]
-	name   = "Getting started"
-	url    = "getting-started/"
-	weight = 10
-
-[[menu.main]]
-	name   = "Adding content"
-	url    = "adding-content/"
-	weight = 20
-
-[[menu.main]]
-	name   = "Roadmap"
-	url    = "roadmap/"
-	weight = 30
-
-[[menu.main]]
-	name   = "License"
-	url    = "license/"
-	weight = 40
-
-
-[blackfriday]
-	smartypants	= true
-	fractions = true
-	smartDashes = true
-	plainIDAnchors = true
+  [params.social]
+  #facebook      = "full page or profile url in facebook"
+  #googleplus    = "full profile url in googleplus"
+  email         = "email@example.com"
+  #twitter       = "full profile url in twitter"
+  #linkedin      = "full profile url in linkedin"
+  #stackoverflow = "full profile url in stackoverflow"
+  #instagram     = "full profile url in instagram"
+  github        = "full profile url in github"
